@@ -1,0 +1,9 @@
+.idea/
+build/
+usc_quadruped_learning.egg-info
+learning/ray_results_ppo/
+mpc_osqp.cpython*
+**/summary.png
+**/__pycache__/
+dist/
+.pytest_cache/

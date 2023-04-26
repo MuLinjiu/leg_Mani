@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --account=bellegar_401
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:a100:1
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=64GB
+#SBATCH --time=48:00:00
+module purge
+module load gcc/8.3.0
+module load python/3.6.8
+module load cudnn/8.1.0.77-11.2-cuda
+module load cuda/11.2.0
+
+python train_end2end.py
+

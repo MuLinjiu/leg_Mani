@@ -1,0 +1,1 @@
+this data9 increase alpha_tau to 0.05 in optimization --> help prevent torque saturation.
